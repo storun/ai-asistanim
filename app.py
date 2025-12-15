@@ -69,7 +69,7 @@ if uploaded_file:
 
             # --- SOHBET MODELİ: Google Gemini ---
             llm = ChatGoogleGenerativeAI(
-                model="gemini-1.5-flash", 
+                model="gemini-pro",
                 temperature=0.3, 
                 google_api_key=api_key
             )
@@ -91,4 +91,5 @@ if uploaded_file:
             st.error(f"Hata oluştu: {e}")
 else:
     st.info("Lütfen başlamak için sol menüden bir PDF yükleyin.")
+
 
