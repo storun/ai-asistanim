@@ -2,9 +2,10 @@ streamlit
 langchain
 langchain-community
 langchain-core
-langchain-text-splitters
 langchain-google-genai
+langchain-text-splitters
 chromadb
 pypdf
 python-dotenv
 sentence-transformers
+pysqlite3-binary
