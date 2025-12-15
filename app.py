@@ -20,7 +20,7 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 # Import hatasını önlemek için daha güvenli bir yol:
-from langchain.chains import RetrievalQA
+from langchain.chains.retrieval_qa.base import RetrievalQA
 
 # 1. API Anahtarını Yükle (Environment veya Secrets'tan)
 load_dotenv()
@@ -91,3 +91,4 @@ if uploaded_file:
             st.error(f"Hata oluştu: {e}")
 else:
     st.info("Lütfen başlamak için sol menüden bir PDF yükleyin.")
+
